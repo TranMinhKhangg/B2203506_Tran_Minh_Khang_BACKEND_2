@@ -17,8 +17,6 @@ app.get("/", (req, res) => {
 
 app.use("/api/contacts", contactsRouter);
 
-module.exports = app;
-
 app.use((req, res, next) => {
     //Code ở đây sẽ không chạy khi không có route định nghĩa nào
     //Khớp với yêu cầu. Gọi next() để chuyển sang middleware xử lý lỗi
@@ -34,3 +32,5 @@ app.use((error, req, res, next) => {
         message:error.message || "Internal Server Error",
     })
 })
+
+module.exports = app;
