@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // exports.create = (req, res) => {
 //     res.send({message: "Create handler" });
 // };
@@ -19,6 +20,8 @@
 // exports.findAllFavorite = (req, res) => {
 //     res.send({message:"findAllFavorite handler" });
 // };
+=======
+>>>>>>> c00b9bde859876e3862dc506d7a7809c64435ea4
 
 const ApiError = require("../api-error");
 const ContactService = require("../services/contact.service");
